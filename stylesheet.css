@@ -5,34 +5,73 @@ body {
     justify-content: center;
     flex-direction: column;
     color: white;
-}
-
-.question-box {
+    background-color: #0a0a0a;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .title {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .title-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem;
+  }
+  
+  .label, .bodyText {
+    max-width: 600px;
+    text-align: center;
+    margin: 1rem;
+    line-height: 1.6;
+  }
+  
+  .tab-btn {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .active {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .question-box {
     border: 1px solid #ccc;
     margin: 10px;
     padding: 10px;
     border-radius: 6px;
-}
-
-.answer {
+  }
+  
+  .answer {
     display: none;
     margin-top: 8px;
-}
-
-
-
-.tab-btn {
-    color: white;
-    background-color: transparent;
-
-}
-
-.active {
-    background-color: rgb(255, 255, 255, 0.2);
-}
+  }
   
-
-.toggle-btn {
+  .toggle-btn {
     cursor: pointer;
     color: #97A3B6;
     background: none;
@@ -40,10 +79,5 @@ body {
     font-size: 16px;
     text-align: left;
     padding: 0;
-}
-
-
-.title {
-    background-image: url(faq-title-bg@2x.png);
-    background-size: 100% 100%;
-}
+  }
+  
