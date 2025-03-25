@@ -1,0 +1,49 @@
+body {
+    font-family: "Be Vietnam Pro", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.question-box {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.answer {
+    display: none;
+    margin-top: 8px;
+}
+
+
+
+.tab-btn {
+    color: white;
+    background-color: transparent;
+
+}
+
+.active {
+    background-color: rgb(255, 255, 255, 0.2);
+}
+  
+
+.toggle-btn {
+    cursor: pointer;
+    color: #97A3B6;
+    background: none;
+    border: none;
+    font-size: 16px;
+    text-align: left;
+    padding: 0;
+}
+
+
+.title {
+    background-image: url(faq-title-bg@2x.png);
+    background-size: 100% 100%;
+}
